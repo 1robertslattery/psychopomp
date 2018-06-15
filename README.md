@@ -1,7 +1,9 @@
 # Psychopomp
 A Client/Server Chat Application
 
-![Alt text](/screenshots/login_1.png)
+<p>
+    <img src="/screenshots/login_1.png" width="220" height="240" />
+</p>
 ![Alt text](/screenshots/chat_screen.png?raw=true "Optional Title")
 ![Alt text](/screenshots/login_2.png?raw=true "Optional Title")
 
