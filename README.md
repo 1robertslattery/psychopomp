@@ -13,7 +13,7 @@ commercial purposes.
 
 ## PROJECT DETAILS
 
-The Psychompomp project aims to be customizable and easy to use.
+The Psychopomp project aims to be customizable and easy to use.
 
 **Features**
 
