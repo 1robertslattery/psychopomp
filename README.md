@@ -1,7 +1,7 @@
 # Psychopomp
 A Client/Server Chat Application
 
-![Alt text](/screenshots/login_1.png?raw=true "Optional Title")
+![alt text](https://github.com/1robertslattery/psychopomp/blob/master/screenshots/login_1.png?raw=true "Screenshot")
 ![Alt text](/screenshots/chat_screen.png?raw=true "Optional Title")
 ![Alt text](/screenshots/login_2.png?raw=true "Optional Title")
 
