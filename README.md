@@ -28,7 +28,7 @@ To generate the ui_mainwindow.h file, you will have to run the Qt User Interface
 cd C:\psychopomp
 C:\Qt\5.10.1\msvc2015_64\bin\uic mainwindow.ui -o ui_mainwindow.h
 ```
-A NSIS installer file is available for Windows in the \nsis folder. It uses the [UltraModernUI plugin](http://ultramodernui.sourceforge.net/).
+A NSIS installer file is available for Windows in the \installation folder. It uses the [UltraModernUI plugin](http://ultramodernui.sourceforge.net/).
 
 Visit http://doc.qt.io/qt-5/qtnetwork-programming.html for more information on Qt's Networking Framework.
 
