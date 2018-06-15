@@ -1,15 +1,15 @@
 # Psychopomp
 A Client/Server Chat Application
 
-![Alt text](/screenshots/login_1.PNG?raw=true)
-![Alt text](/screenshots/chat_screen.PNG?raw=true)
-![Alt text](/screenshots/login_2.PNG?raw=true)
-
 Psychopomp is an open-source chat application.  Its purpose is to allow multiple client PCs on a 
 Local Area Network (LAN) to send messages to each other.  It is written in C++, using Qt. 
 It is released under the terms of the GNU Lesser General Public License (LGPL) version 3, in line
 with the Qt Open Source Edition, permitting the use of Qt's proprietary library for research and/or
 commercial purposes.
+
+![Alt text](/screenshots/login_1.PNG?raw=true)
+![Alt text](/screenshots/chat_screen.PNG?raw=true)
+![Alt text](/screenshots/login_2.PNG?raw=true)
 
 ## PROJECT DETAILS
 
