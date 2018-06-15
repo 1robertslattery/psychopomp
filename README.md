@@ -13,7 +13,7 @@ commercial purposes.
 
 ## PROJECT DETAILS
 
-The Psychopomp project aims to be customizable and easy to use.
+The Psychopomp project aims to be customizable and easy to use. Psychopomp derives from Greek, meaning the "guide of souls".
 
 **Features**
 
