@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>close_32px.png</file>
+        <file>minimize_32px.png</file>
+        <file>save.png</file>
+        <file>settings.png</file>
+        <file>account_grey.png</file>
+        <file>account_greyer.png</file>
+        <file>chat_icon.png</file>
+        <file>close_32px_dark.png</file>
+        <file>minimize_32px_dark.png</file>
+        <file>picture_holder.jpg</file>
+        <file>typing.png</file>
+        <file>sending.wav</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,1203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QDialog" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>640</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QStackedWidget" name="centralWidget">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>640</width>
+     <height>480</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="currentIndex">
+    <number>1</number>
+   </property>
+   <widget class="QWidget" name="mainpage">
+    <property name="styleSheet">
+     <string notr="true">QWidget {
+ background-color: #424242;
+
+}</string>
+    </property>
+    <widget class="QTextEdit" name="textEdit">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>90</y>
+       <width>401</width>
+       <height>325</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Roboto</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::NoFocus</enum>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QTextEdit {
+ border: 1.5px;
+border-radius: 10px;
+ background-color: #424242;
+
+}</string>
+     </property>
+     <property name="placeholderText">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="exitButton">
+     <property name="geometry">
+      <rect>
+       <x>580</x>
+       <y>7</y>
+       <width>41</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>Exit application</string>
+     </property>
+     <property name="whatsThis">
+      <string>Exit application</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+ border: 1px ;
+border-radius: 15px;
+ background-color: #616161;
+
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="myresources.qrc">
+       <normaloff>:/images/close_32px.png</normaloff>:/images/close_32px.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>24</width>
+       <height>24</height>
+      </size>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="minimizeButton">
+     <property name="geometry">
+      <rect>
+       <x>530</x>
+       <y>7</y>
+       <width>41</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>Minimize window</string>
+     </property>
+     <property name="whatsThis">
+      <string>Minimize window</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+ border: 1px ;
+border-radius: 15px;
+ background-color: #616161;
+
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="myresources.qrc">
+       <normaloff>:/images/minimize_32px.png</normaloff>:/images/minimize_32px.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>24</width>
+       <height>24</height>
+      </size>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="mainTitle">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>12</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Roboto Black</family>
+       <pointsize>9</pointsize>
+       <weight>75</weight>
+       <italic>false</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+ color: #eeeeee;
+}</string>
+     </property>
+     <property name="text">
+      <string>psychopomp</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="picture">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>50</y>
+       <width>32</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>Your icon</string>
+     </property>
+     <property name="whatsThis">
+      <string>Your icon</string>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QListWidget" name="listWidget">
+     <property name="geometry">
+      <rect>
+       <x>8</x>
+       <y>90</y>
+       <width>221</width>
+       <height>325</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Roboto</family>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QListWidget {
+ border: 1px ;
+ border-radius: 15px;
+ background-color: #eeeeee;
+
+}</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>425</y>
+       <width>401</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Roboto</family>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLineEdit {
+ border: 1.5px ;
+ border-radius: 10px;
+ background-color: #eeeeee;
+
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="placeholderText">
+      <string> Type a message. Press Enter to send.</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="settingsButton">
+     <property name="geometry">
+      <rect>
+       <x>177</x>
+       <y>50</y>
+       <width>41</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Roboto</family>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="toolTip">
+      <string>Settings</string>
+     </property>
+     <property name="whatsThis">
+      <string>Settings</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+ border: 1px ;
+border-radius: 15px;
+ background-color: #616161;
+color: #eeeeee;
+
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="myresources.qrc">
+       <normaloff>:/images/settings.png</normaloff>:/images/settings.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>32</width>
+       <height>24</height>
+      </size>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="chatTitle">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>45</y>
+       <width>401</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QTextEdit {
+ border: 1.5px;
+border-radius: 10px;
+background-color: #616161;
+
+}</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="dark_bkgd_2">
+     <property name="geometry">
+      <rect>
+       <x>7</x>
+       <y>45</y>
+       <width>220</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+ border:1.5px;
+border-radius: 10px;
+ background-color: #616161;
+
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="saveButton">
+     <property name="geometry">
+      <rect>
+       <x>580</x>
+       <y>50</y>
+       <width>41</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Roboto</family>
+       <pointsize>9</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="toolTip">
+      <string>Save conversation</string>
+     </property>
+     <property name="whatsThis">
+      <string>Save conversation</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+ border: 1px ;
+border-radius: 15px;
+ background-color: #616161;
+color: #eeeeee;
+
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="myresources.qrc">
+       <normaloff>:/images/save.png</normaloff>:/images/save.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>24</width>
+       <height>24</height>
+      </size>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="typeDetected">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>420</y>
+       <width>71</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Roboto</family>
+       <pointsize>10</pointsize>
+       <italic>true</italic>
+      </font>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+ color: #eeeeee;
+}</string>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Plain</enum>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/images/typing.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="chatIcon">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>28</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/images/chat_icon.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <zorder>dark_bkgd_2</zorder>
+    <zorder>textEdit</zorder>
+    <zorder>mainTitle</zorder>
+    <zorder>lineEdit</zorder>
+    <zorder>chatTitle</zorder>
+    <zorder>settingsButton</zorder>
+    <zorder>listWidget</zorder>
+    <zorder>picture</zorder>
+    <zorder>saveButton</zorder>
+    <zorder>typeDetected</zorder>
+    <zorder>chatIcon</zorder>
+    <zorder>minimizeButton</zorder>
+    <zorder>exitButton</zorder>
+   </widget>
+   <widget class="QWidget" name="loginpage">
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget {
+border: 1px;
+background-color: #424242;
+
+}</string>
+    </property>
+    <widget class="QGraphicsView" name="graphicsView">
+     <property name="geometry">
+      <rect>
+       <x>242</x>
+       <y>100</y>
+       <width>156</width>
+       <height>156</height>
+      </rect>
+     </property>
+     <property name="whatsThis">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QGraphicsView {
+ border: 1.5px ;
+ border-radius: 10px;
+ background-color: #dcdcdc;
+
+
+}</string>
+     </property>
+     <property name="dragMode">
+      <enum>QGraphicsView::NoDrag</enum>
+     </property>
+     <property name="transformationAnchor">
+      <enum>QGraphicsView::NoAnchor</enum>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="usernameEdit">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>300</y>
+       <width>240</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Roboto Medium</family>
+       <pointsize>11</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLineEdit {
+ border: 1.5px ;
+ border-radius: 10px;
+ background-color: #dcdcdc;
+color: #424242;
+
+}</string>
+     </property>
+     <property name="maxLength">
+      <number>64</number>
+     </property>
+     <property name="frame">
+      <bool>true</bool>
+     </property>
+     <property name="echoMode">
+      <enum>QLineEdit::Normal</enum>
+     </property>
+     <property name="placeholderText">
+      <string/>
+     </property>
+     <property name="cursorMoveStyle">
+      <enum>Qt::LogicalMoveStyle</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="sizeLabel">
+     <property name="geometry">
+      <rect>
+       <x>275</x>
+       <y>260</y>
+       <width>101</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Roboto</family>
+       <pointsize>8</pointsize>
+       <italic>true</italic>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel{
+background-color: #eeeeee;
+color: #616161;
+}</string>
+     </property>
+     <property name="text">
+      <string>Best size: 256x256</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="exitLogin">
+     <property name="geometry">
+      <rect>
+       <x>435</x>
+       <y>60</y>
+       <width>32</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+ border: 1px ;
+border-radius: 15px;
+ background-color: #eeeeee;
+
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="myresources.qrc">
+       <normaloff>:/images/close_32px_dark.png</normaloff>:/images/close_32px_dark.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>24</width>
+       <height>24</height>
+      </size>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="minimizeLogin">
+     <property name="geometry">
+      <rect>
+       <x>175</x>
+       <y>60</y>
+       <width>32</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+ border: 1px ;
+border-radius: 15px;
+ background-color: #eeeeee;
+
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="myresources.qrc">
+       <normaloff>:/images/minimize_32px_dark.png</normaloff>:/images/minimize_32px_dark.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>24</width>
+       <height>24</height>
+      </size>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="loginLabel">
+     <property name="geometry">
+      <rect>
+       <x>242</x>
+       <y>30</y>
+       <width>156</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Roboto Black</family>
+       <pointsize>11</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+ border: 1px ;
+border-radius: 10px;
+ background-color: #757575;
+color: #eeeeee;
+
+}</string>
+     </property>
+     <property name="text">
+      <string>              LOGIN</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="loginButton">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>350</y>
+       <width>240</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Roboto Black</family>
+       <pointsize>11</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+ border: 1px ;
+border-radius: 10px;
+background-color: #00aedb;
+color: #eeeeee;
+}</string>
+     </property>
+     <property name="text">
+      <string>SIGN IN</string>
+     </property>
+     <property name="autoDefault">
+      <bool>true</bool>
+     </property>
+     <property name="default">
+      <bool>false</bool>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="greyBkgd">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>80</y>
+       <width>361</width>
+       <height>331</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+ border: 1.5px ;
+ border-radius: 10px;
+ background-color: #dcdcdc;
+
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="whiteBkgd">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>50</y>
+       <width>320</width>
+       <height>391</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+ border: 1.5px ;
+ border-radius: 10px;
+ background-color: #eeeeee;
+
+}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Plain</enum>
+     </property>
+     <property name="lineWidth">
+      <number>1</number>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="acountBlack">
+     <property name="geometry">
+      <rect>
+       <x>168</x>
+       <y>305</y>
+       <width>24</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+ border: 1.5px ;
+ border-radius: 10px;
+ background-color: #eeeeee;
+
+}</string>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/images/account_greyer.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="radioButton">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>410</y>
+       <width>101</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Roboto</family>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QRadioButton {
+ border: 1.5px ;
+ border-radius: 10px;
+ background-color: #eeeeee;
+color: #616161;
+
+}</string>
+     </property>
+     <property name="text">
+      <string>Remember Me</string>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="appTitle">
+     <property name="geometry">
+      <rect>
+       <x>45</x>
+       <y>448</y>
+       <width>91</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Roboto Black</family>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+ border: 1px ;
+border-radius: 10px;
+ background-color: #424242;
+color: #eeeeee;
+
+}</string>
+     </property>
+     <property name="text">
+      <string>psychopomp</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="appLogo">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>450</y>
+       <width>31</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/images/chat_icon.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <zorder>greyBkgd</zorder>
+    <zorder>whiteBkgd</zorder>
+    <zorder>usernameEdit</zorder>
+    <zorder>sizeLabel</zorder>
+    <zorder>exitLogin</zorder>
+    <zorder>minimizeLogin</zorder>
+    <zorder>loginLabel</zorder>
+    <zorder>loginButton</zorder>
+    <zorder>acountBlack</zorder>
+    <zorder>radioButton</zorder>
+    <zorder>graphicsView</zorder>
+    <zorder>appTitle</zorder>
+    <zorder>appLogo</zorder>
+   </widget>
+   <widget class="QWidget" name="settings">
+    <property name="styleSheet">
+     <string notr="true">QWidget {
+ background-color: #424242;
+
+}</string>
+    </property>
+    <widget class="QLabel" name="pageTitle">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>12</y>
+       <width>60</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Roboto Black</family>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+ color: #eeeeee;
+}</string>
+     </property>
+     <property name="text">
+      <string>settings</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="backButton">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>410</y>
+       <width>320</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Roboto Black</family>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+ border: 1.5px;
+border-radius: 15px;
+ background-color: #757575;
+color: #eeeeee;
+
+}</string>
+     </property>
+     <property name="text">
+      <string>SAVE SETTINGS</string>
+     </property>
+    </widget>
+    <widget class="QSlider" name="colorSlider">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>320</y>
+       <width>320</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="maximum">
+      <number>100</number>
+     </property>
+     <property name="singleStep">
+      <number>50</number>
+     </property>
+     <property name="pageStep">
+      <number>50</number>
+     </property>
+     <property name="value">
+      <number>0</number>
+     </property>
+     <property name="sliderPosition">
+      <number>0</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="invertedAppearance">
+      <bool>false</bool>
+     </property>
+     <property name="invertedControls">
+      <bool>false</bool>
+     </property>
+     <property name="tickPosition">
+      <enum>QSlider::TicksBelow</enum>
+     </property>
+     <property name="tickInterval">
+      <number>50</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="colorsTitle">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>240</y>
+       <width>241</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Roboto Black</family>
+       <pointsize>11</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+ color: #eeeeee;
+}</string>
+     </property>
+     <property name="text">
+      <string>COLOR THEMES - COMING SOON</string>
+     </property>
+    </widget>
+    <widget class="Line" name="line">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>50</y>
+       <width>320</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QFrame#line{
+color: #eeeeee;
+}</string>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Plain</enum>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="iconTitle">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>20</y>
+       <width>41</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Roboto Black</family>
+       <pointsize>11</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+ color: #eeeeee;
+}</string>
+     </property>
+     <property name="text">
+      <string>ICON</string>
+     </property>
+    </widget>
+    <widget class="Line" name="line_2">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>270</y>
+       <width>320</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QFrame#line_2{
+color: #eeeeee;
+}</string>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Plain</enum>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QGraphicsView" name="iconView">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>80</y>
+       <width>128</width>
+       <height>128</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QGraphicsView {
+ border: 1.5px ;
+ border-radius: 10px;
+ background-color: #dcdcdc;
+}</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="changeImageButton">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>120</y>
+       <width>141</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Roboto Black</family>
+       <pointsize>9</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+ border: 1.5px;
+border-radius: 15px;
+ background-color: #757575;
+color: #eeeeee;
+
+}</string>
+     </property>
+     <property name="text">
+      <string>CHANGE IMAGE</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="darkLabel">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>350</y>
+       <width>81</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Roboto</family>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+ color: #eeeeee;
+}</string>
+     </property>
+     <property name="text">
+      <string>Dark (Default)</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="metroLabel">
+     <property name="geometry">
+      <rect>
+       <x>305</x>
+       <y>350</y>
+       <width>41</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Roboto</family>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+ color: #eeeeee;
+}</string>
+     </property>
+     <property name="text">
+      <string>Metro</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="metroBlueLabel">
+     <property name="geometry">
+      <rect>
+       <x>445</x>
+       <y>350</y>
+       <width>61</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Roboto</family>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+ color: #eeeeee;
+}</string>
+     </property>
+     <property name="text">
+      <string>Metro Blue</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>28</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/images/chat_icon.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="myresources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
