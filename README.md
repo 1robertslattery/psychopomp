@@ -1,7 +1,7 @@
 # Psychopomp
 A Client/Server Chat Application
 
-![alt text](\screenshots\login_1.png?raw=true "Screenshot")
+![](screenshots/login_1.png?raw=true)
 ![Alt text](/screenshots/chat_screen.png?raw=true "Optional Title")
 ![Alt text](/screenshots/login_2.png?raw=true "Optional Title")
 
