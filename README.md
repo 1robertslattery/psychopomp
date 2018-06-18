@@ -38,7 +38,7 @@ Setting up a generic project in Qt: http://doc.qt.io/qtcreator/creator-project-g
 
 ## TRY IT OUT
 
-A Windows installer for v1.1.0 is available in the [releases](https://github.com/1robertslattery/psychopomp/releases) tab.
+Available for Windows 7/8.1/10 (x64).  An installer for v1.1.0 is available in the [release](https://github.com/1robertslattery/psychopomp/releases) tab.
 
 ## PREREQUISITES
 
@@ -56,7 +56,7 @@ A Windows installer for v1.1.0 is available in the [releases](https://github.com
 
 ## NOTES
 
-Available for Windows 7/8.1/10 (x64).  Custom color themes are not yet available, however.  This software will listen for ANY network connection 
+Custom color themes are not yet available.  This software will listen for ANY network connection 
 enabled on your PC and may discover virtual machine guest connections, which will lead to errors.  Bugs and bottlenecks are being worked out. 
 Psychopomp is shipped as-is without warranty.
 
