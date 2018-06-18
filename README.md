@@ -36,6 +36,10 @@ Getting started with Qt: http://doc.qt.io/qt-5/gettingstarted.html
 
 Setting up a generic project in Qt: http://doc.qt.io/qtcreator/creator-project-generic.html
 
+## TRY IT OUT
+
+A Windows installer for v1.1.0 is available in the release tab.
+
 ## PREREQUISITES
 
 - Qt 5.10.1 or later
