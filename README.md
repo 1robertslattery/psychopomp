@@ -18,7 +18,9 @@ The Psychopomp project aims to be customizable and easy to use. Psychopomp deriv
 **Features**
 
 - Custom username and picture
+- Custom color themes
 - Typing detection across network
+- Notification sounds
 - Saving conversations to file (.html, .txt)
 
 To generate the ui_mainwindow.h file, you will have to run the Qt User Interface Compiler (uic.exe) from the .ui file directory.
@@ -56,7 +58,7 @@ Available for Windows 7/8.1/10 (x64).  An installer for v1.1.0 is available in t
 
 ## NOTES
 
-Custom color themes are not yet available.  This software will listen for ANY network connection 
+Custom color themes can be changed to your preference in chat .h/.cpp.  This software will listen for ANY network connection 
 enabled on your PC and may discover virtual machine guest connections, which will lead to errors.  Bugs and bottlenecks are being worked out. 
 Psychopomp is shipped as-is without warranty.
 
