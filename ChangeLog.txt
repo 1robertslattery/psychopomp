@@ -8,3 +8,6 @@
 2018-06-18: v1.1.0:
 + Graphical improvements to chat and participants window
 + Fixed naming conventions to better follow Qt API
+
+2018-06-19: v1.1.1:
++ Included basic support for custom color themes in chat .h/.cpp
