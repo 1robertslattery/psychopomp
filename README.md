@@ -40,7 +40,7 @@ Setting up a generic project in Qt: http://doc.qt.io/qtcreator/creator-project-g
 
 ## TRY IT OUT
 
-Available for Windows 7/8.1/10 (x64).  An installer for v1.1.0 is available in the [release](https://github.com/1robertslattery/psychopomp/releases) tab.
+Available for Windows 7/8.1/10 (x64).  An installer for v1.2.0 is available in the [release](https://github.com/1robertslattery/psychopomp/releases) tab.
 
 ## PREREQUISITES
 
