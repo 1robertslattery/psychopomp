@@ -59,7 +59,7 @@ Available for Windows 7/8.1/10 (x64).  An installer for v1.2.0 is available in t
 ## NOTES
 
 Custom color themes can be changed to your preference in chat .h/.cpp.  This software will listen for ANY network connection 
-enabled on your PC and may discover virtual machine guest connections, which will lead to errors.  Bugs and bottlenecks are being worked out. 
+enabled on your PC and may discover virtual machine guest connections, which will lead to errors.  There is a known issue with the QTcpSocket timeout() that may interfere with messages. It is being worked out. 
 Psychopomp is shipped as-is without warranty.
 
 
