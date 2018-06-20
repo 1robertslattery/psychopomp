@@ -128,7 +128,7 @@ private:
     // Sound
     QSoundEffect notification;
 
-    // Variables for timers
+    // Timers
     QTimer* pingTimer;
     QTimer* animationTimer;
 
@@ -136,6 +136,15 @@ private:
     QFont fontRoboto;
     QFont fontRobotoMedium;
     QFont fontRobotoBlack;
+
+    // Animation methods & variables
+    void initLogin();
+    void initChatWindow();
+    void fadeOutLoginPage();
+    void fadeInChatPage();
+    bool canAnimateLogin;
+    bool canFadeOut;
+    bool canFadeIn;
 
 protected:
 

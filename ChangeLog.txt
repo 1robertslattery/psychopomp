@@ -10,4 +10,9 @@
 + Fixed naming conventions to better follow Qt API
 
 2018-06-19: v1.1.1:
-+ Included basic support for custom color themes in chat .h/.cpp
++ Included basic support for custom color themes in chat class
+
+2018-06-20: v1.2.0:
++ Added animation to application login
++ Included line to disable console window (Windows OS)
++ Fixed error that didn't allow "Remember Me" option to work

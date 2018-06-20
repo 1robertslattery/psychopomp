@@ -1,17 +1,22 @@
 #include <QApplication>
+#include <QtWidgets>
+#include <QtNetwork>
+#include <QObject>
 #include <QtCore/QSettings>
 #include <QtNetwork/QNetworkConfigurationManager>
 #include <QtNetwork/QNetworkSession>
 #include <QNetworkAccessManager>
-#include <QObject>
-#include <QtWidgets>
-#include <QtNetwork>
 #include "server.h"
 #include "chat.h"
 
+// Uncomment if you would like to prevent the console window from running
+#pragma comment(linker, "/SUBSYSTEM:windows /ENTRY:mainCRTStartup")
+
 int main(int argc, char *argv[])
 {
-    QApplication a(argc, argv);
+    QApplication app(argc, argv);
+
+    QCoreApplication::setApplicationName("psychopomp");
 
     QNetworkConfigurationManager manager;
 
@@ -28,8 +33,8 @@ int main(int argc, char *argv[])
 
         if ((config.state() & QNetworkConfiguration::Discovered) != QNetworkConfiguration::Discovered)
             config = manager.defaultConfiguration();
-        
-        QNetworkSession *networkSession = new QNetworkSession(config, &a);
+
+        QNetworkSession *networkSession = new QNetworkSession(config, &app);
         networkSession->open();
         networkSession->waitForOpened();
 
@@ -43,7 +48,7 @@ int main(int argc, char *argv[])
                 id = networkSession->sessionProperty(QLatin1String("UserChoiceConfiguration")).toString();
             else
                 id = config.identifier();
-            
+
             QSettings settings(QSettings::UserScope, QLatin1String("QtProject"));
             settings.beginGroup(QLatin1String("QtNetwork"));
             settings.setValue(QLatin1String("DefaultNetworkConfiguration"), id);
@@ -54,5 +59,5 @@ int main(int argc, char *argv[])
     Chat dialog;
     dialog.show();
 
-    return a.exec();
+    return app.exec();
 }

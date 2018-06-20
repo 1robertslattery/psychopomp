@@ -4,7 +4,7 @@ QT += widgets
 QT += network
 QT += multimedia
 
-CONFIG += c++11 console
+CONFIG += c++11
 CONFIG -= app_bundle
 
 # The following define makes your compiler emit warnings if you use
@@ -31,7 +31,7 @@ HEADERS += \
     src\manager.h \
     src\chat.h \
     src\socket.h \
-    ui_mainwindow.h
+    ui_mainwindow.h \
 
 FORMS += \
     mainwindow.ui
